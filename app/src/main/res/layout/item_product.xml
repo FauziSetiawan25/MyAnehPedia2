@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Gambar Produk -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@color/cardview_dark_background"/>
+
+    <!-- Nama Produk -->
+    <TextView
+        android:id="@+id/tvNamaProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Harga Produk -->
+    <TextView
+        android:id="@+id/tvHargaProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rp 100,000"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaProduk"
+        app:layout_constraintStart_toStartOf="@id/tvNamaProduk"
+        app:layout_constraintEnd_toEndOf="@id/tvNamaProduk" />
+
+    <!-- Stok Produk -->
+    <TextView
+        android:id="@+id/tvStokProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stok: 10"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHargaProduk"
+        app:layout_constraintStart_toStartOf="@id/tvNamaProduk"
+        app:layout_constraintEnd_toEndOf="@id/tvNamaProduk" />
+
+    <!-- Tombol Beli -->
+    <Button
+        android:id="@+id/btnBeli"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Beli"
+        android:contentDescription="Beli Sekarang"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <!-- Garis Pembatas -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

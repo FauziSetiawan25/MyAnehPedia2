@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNamaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Barang"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etHargaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Barang"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etStokBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stok Barang"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etGambarBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL Gambar Barang"
+        android:inputType="textUri" />
+</LinearLayout>
